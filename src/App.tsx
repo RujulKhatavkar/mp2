@@ -6,18 +6,22 @@ import ListView from "./pages/ListView";
 import GalleryView from "./pages/GalleryView";
 import DetailView from "./pages/DetailView";
 
-const basename="/mp2";
+// Use "/" in dev, "/mp2" when deployed on GitHub Pages
+const BASENAME = process.env.NODE_ENV === "production" ? "/mp2" : "/";
 
 export default function App() {
   return (
-    <BrowserRouter basename="/mp2">
-
+    <BrowserRouter basename={BASENAME}>
       <header className="topbar">
-        <nav className="nav">
-          <NavLink to="/" end className="navlink">List</NavLink>
-          <NavLink to="/gallery" className="navlink">Gallery</NavLink>
-        </nav>
+        <div className="brand-row">
+          <a href={BASENAME} className="brand">PokéInfo</a>
+          <nav className="nav">
+            <NavLink to="/" end className="navlink">List</NavLink>
+            <NavLink to="/gallery" className="navlink">Gallery</NavLink>
+          </nav>
+        </div>
       </header>
+
       <main className="main">
         <Routes>
           <Route path="/" element={<ListView />} />
