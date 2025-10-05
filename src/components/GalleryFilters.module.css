@@ -1,0 +1,67 @@
+.wrapper {
+    margin: 8px 0 12px;
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6px;
+  }
+  
+  .title {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+  }
+  
+  .clearBtn {
+    border: 1px solid #ddd;
+    background: white;
+    border-radius: 999px;
+    padding: 4px 10px;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 6px 10px;
+    border: 1px solid #e5e5e5;
+    border-radius: 999px;
+    cursor: pointer;
+    user-select: none;
+    background: #fff;
+    transition: border-color 0.15s ease, background 0.15s ease;
+  }
+  
+  .chip:hover {
+    border-color: #cfcfcf;
+  }
+  
+  .active {
+    background: #f4f8ff;
+    border-color: #b9c7ff;
+    font-weight: 600;
+  }
+  
+  .checkbox {
+    /* Keep visible for accessibility but tidy */
+    width: 14px;
+    height: 14px;
+    margin: 0;
+  }
+  
+  .text {
+    font-size: 13px;
+    text-transform: capitalize;
+  }
+  
