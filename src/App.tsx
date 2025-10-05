@@ -6,7 +6,7 @@ import ListView from "./pages/ListView";
 import GalleryView from "./pages/GalleryView";
 import DetailView from "./pages/DetailView";
 
-const basename = process.env.NODE_ENV === "production" ? "/mp2" : "/";
+const basename = "/mp2";
 
 export default function App() {
   return (
