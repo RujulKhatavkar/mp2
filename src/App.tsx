@@ -14,7 +14,7 @@ export default function App() {
     <BrowserRouter basename={BASENAME}>
       <header className="topbar">
         <div className="brand-row">
-          <a href={BASENAME} className="brand">PokéInfo</a>
+          
           <nav className="nav">
             <NavLink to="/" end className="navlink">List</NavLink>
             <NavLink to="/gallery" className="navlink">Gallery</NavLink>
