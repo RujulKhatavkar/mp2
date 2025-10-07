@@ -1,0 +1,5 @@
+2025-10-05,ChatGPT,GPT-5 Thinking,"Fixed TS1208 isolatedModules by making components/pages real modules",src/components/.tsx; src/pages/.tsx,code,,
+2025-10-06,ChatGPT,GPT-5 Thinking,"UI polish: modern App.css (sticky topbar, cards, badges, focus rings); no inline styles",src/App.css,css,,
+2025-10-06,ChatGPT,GPT-5 Thinking,"GitHub Actions workflow to build CRA and deploy to Pages; copy index.html→404.html for SPA,,
+2025-10-06,ChatGPT,GPT-5 Thinking,"CI fix: remove/inline basename to satisfy eslint in production build",src/App.tsx,code,,
+2025-10-06,ChatGPT,GPT-5 Thinking,"References list (docs consulted, attributions)",REFERENCES (text),text,,
